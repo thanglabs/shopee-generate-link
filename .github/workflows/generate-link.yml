@@ -16,15 +16,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: python3 -m pip install --disable-pip-version-check -r requirements.txt
 
       - name: Generate link
         env:
           ORIGINAL_LINK: ${{ inputs.original_link }}
-        run: python main.py
+        run: python3 main.py
