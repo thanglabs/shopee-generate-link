@@ -13,84 +13,49 @@ USER_AGENT = (
     "Chrome/151.0.0.0 Safari/537.36"
 )
 
-COOKIES = [
-    ("language", "vi", ".shopee.vn"),
-    ("_gcl_au", "1.1.717410842.1779629671", ".shopee.vn"),
-    ("SPC_F", "1lvwarPPnmRUATX37bLZN7S04jNKGU6d", ".shopee.vn"),
-    ("REC_T_ID", "4c0218ad-5775-11f1-86bb-9a9d85dbfc2d", ".shopee.vn"),
-    ("_ga", "GA1.1.1355450000.1780118365", ".shopee.vn"),
-    ("SPC_CLIENTID", "MWx2d2FyUFBubVJVdxqhvymedvofmtmy", ".shopee.vn"),
-    (
-        "_hjSessionUser_868286",
-        "eyJpZCI6IjI5M2ExMzM1LTk1YzYtNTQ5Ni1hMjk1LTA2YmM0MWU2MjNhMyIsImNyZWF0ZWQiOjE3ODAxMTg0MTYzNTEsImV4aXN0aW5nIjp0cnVlfQ==",
-        ".shopee.vn",
-    ),
-    ("_QPWSDCXHZQA", "7ca5daa8-865e-45b6-e92d-9a51ea498948", "affiliate.shopee.vn"),
-    ("REC7iLP4Q", "05794a98-388c-4798-8751-2c69ed47dfab", "affiliate.shopee.vn"),
-    ("_ga_FV78QC1144", "GS2.1.s1786161415$o1$g0$t1786161415$j60$l0$h0", ".shopee.vn"),
-    ("csrftoken", "wFN1qR32jwQUDQQlWy0bIXxmOR1kYaQN", ".shopee.vn"),
-    ("SPC_SI", "tXYnagAAAABtNjFrZlEwQuwZwAcAAAAAMW9OWFZrNUc=", ".shopee.vn"),
-    ("_med", "affiliates", ".shopee.vn"),
-    ("language", "vi", "affiliate.shopee.vn"),
-    ("_med", "refer", ".affiliate.shopee.vn"),
-    ("_sapid", "19e63dbafa6027d01cbbf1b8749fdde3b3127df78ec12cc2acb66686", "affiliate.shopee.vn"),
-    ("SPC_SC_SA_TK", "", ".shopee.vn"),
-    ("SPC_SC_SA_UD", "", ".shopee.vn"),
-    ("SPC_SC_OFFLINE_TOKEN", "", ".shopee.vn"),
-    ("SPC_SC_MAIN_SHOP_SA_UD", "", ".shopee.vn"),
-    ("SC_SSO", "-", ".shopee.vn"),
-    ("SC_SSO_U", "-", ".shopee.vn"),
-    ("SPC_SC_SESSION", "", ".shopee.vn"),
-    ("_ga_3XVGTY3603", "GS2.1.s1786854354$o3$g1$t1786854529$j50$l0$h0", ".shopee.vn"),
-    (
-        "_hjSession_868286",
-        "eyJpZCI6ImE2OGYwNzlhLTFmMTgtNDY5NS05OTgxLWQ3ZmViYmZlZGFhOSIsImMiOjE3ODY4NTQ1MzMwMjMsInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjowLCJzcCI6MH0=",
-        ".shopee.vn",
-    ),
-    (
-        "SPC_ST",
-        "rrTZofLnA6F5KpqOpfFvTr9qXRU3FNjsbks2Z6Iqrs6ZxQ23bclFBRvVDwVtSSpXVw8aeoPGe4PcAg4poZ2rrIkyrQ3gm1zNuIQfGBuNkARQiwBYt3oUM4FSKfWncu/8jNWs81cpjoCN/KeqIexPd/ggqEdZRP876K/VC24qAHXEr1NclIWJJDfBJKcjgn1CqICVTb28pml2+DBRQ4MrSw==.AMwETEQBRVZivGIJVmKquWCfQKxh8/OyyKvPgK0pqmL6",
-        ".shopee.vn",
-    ),
-    ("SPC_U", "4500495946", ".shopee.vn"),
-    (
-        "SPC_R_T_ID",
-        "pAuhsWzoPQ7yL/0yirN1gT+KpQumHX+TI67ogq1Xtjzyy9VAOIJ5+2qd5B4j6RzyWs/E3lVJo9GDADEzGv3KxQYEUn4amjmVyPi9mRspKfDck85vaGEJhLaIQraf7cv+XQVKIvwOaa25iIsukt2gNNoUawZcnknWN4dYwEmrecU=",
-        ".shopee.vn",
-    ),
-    ("SPC_R_T_IV", "YnhCSXNjZnpVSmgxQXlpeg==", ".shopee.vn"),
-    (
-        "SPC_T_ID",
-        "pAuhsWzoPQ7yL/0yirN1gT+KpQumHX+TI67ogq1Xtjzyy9VAOIJ5+2qd5B4j6RzyWs/E3lVJo9GDADEzGv3KxQYEUn4amjmVyPi9mRspKfDck85vaGEJhLaIQraf7cv+XQVKIvwOaa25iIsukt2gNNoUawZcnknWN4dYwEmrecU=",
-        ".shopee.vn",
-    ),
-    ("SPC_T_IV", "YnhCSXNjZnpVSmgxQXlpeg==", ".shopee.vn"),
-    ("SPC_CDS_CHAT", "a6ace13a-713c-47f9-8e30-df2f4fc8e7a6", ".shopee.vn"),
-    ("sense_sa_r", "s", ".shopee.vn"),
-    (
-        "AC_CERT_D",
-        "gqRjZGVrxHeFomtpuDE0MjUxOmNhcHRjaGFfY29va2llX2tleaJrdtEAAqRhbGdv0gAAAGSjZGVrwKJjdMRAAAAADMz6+srpuPrvM57Cf+ZesyCjzpS7fSHExkhhfUPNjcYjTFT2GSfMIrdZ/hvxKL+WYVjT9V3dRSDauGpQzKpjaXBoZXJ0ZXh0xQM+AAAADNt2HQrsYGQFUBoR612hjraJxm/KToenKSeNIZcbsb+EOKe0tlqZjVdEZ/U9CWtZxrTsumx3rdaHWjNfTh6Xh0VE5E4SSiRq0sfhciRbxySvTx1rhCG01RCfvRPly+8rfgjtG6BmrxS3LVu7Zuh3UCq5lTntQW/UILks7PgVlUyofqPLEuPR2dj8lg1U3iOsnr3LQzEm88rz+bkD4C+bjZAo3wzjYnfDBDdD9EJnlMTDcI4V3wWxJCruhblFpG2PY1iY+fS2VgqHFn2gWHdnV28U45U9YZN47HfmgMtQFJ/1agv4w64+oGFztbHUv7ooayjEXWtmIlwcnSgMZy6bVbxphv5MvaAevX4tgEEW3LB24Rm6ZbMS188sq+azitBS+2gyIzCHIV5ZMWPy5gz4RY+nVnNCxjQX+YSIRRSWi0uhUivtXJ1uaW1YqxPiBsEdTLym85bbIjEecLJQx+JpiHenR8V2xtYsBAWGQUtgw0qjfnJ8DFLOlSfJsH/eEw6PgSB/v92HDBlPccK2sNVSPqU5W27UVk7PiICt8fhghu2sCX/nkrDk5TtzXQhBmBBejKYF2PrkjlIMv2M5l1b1QSNth0tZ592+Gy1yF84jNrzS8jL2wn/7wJEOmhO2coxrP0ruB45JqoAYXDt1HiW3rbq/hGogtEUXljddLH9F8sj6U4PIE7T0UfqqM4sySOJ40Y08LftXNmGNK5agmN9UzNyJkNGoiNOLJdPe1shthz8/E1AzM4j1lHk8enN+GRIGTQSCuwOcRoKcKsarqDGFW0x/6rM1owYo3g5RCWXrGrRl1gefpzXyFZ9FOnTYmdrwT2/+VaogTHCP7D2Dt0gXjgN7rcz/ozlzUi5Qbl/2mucxw9cKa3qNPG/EEDq1UTJywR0hmBPcmvMsyP3TNVrIgKv02t7j/ETy7VLcJ0hXXhUGB6vPNMZZUW2jvRMCW1NvgtAezRhs8NFp06BQ6YwrgtDnUb2JF0I0SCDhQ7dvJ/JbD+UvfTRq2Dv4cMkzu6fO7fKRRTPNFqs+iJzVN6x4epEPdPb+qojCkR6YDF/DQHYnHiiMiHEuvFPsIg89C3sL8SjBcWkQdgguHl0=",
-        ".shopee.vn",
-    ),
-    (
-        "shopee_webUnique_ccd",
-        "YF0XzsUXlRqcevomLDIEDQ%3D%3D%7CJHK1JqhvbmLx37MMkm4fYCRpL3LsKgUjRMLTwMIUXlZhUNeqEkCUSX4vrRGw0ODMZ%2BA14EY7vtFO1ug%3D%7Cp%2BhwESzTR27KrtCS%7C08%7C3",
-        "affiliate.shopee.vn",
-    ),
-    ("ds", "1313903797f568893d173c28fbe02461", "affiliate.shopee.vn"),
-    ("_ga_4GPP1ZXG63", "GS2.1.s1786854532$o20$g1$t1786855429$j57$l0$h1644400809", ".shopee.vn"),
-]
+COOKIE_HEADER = (
+    "language=vi; _gcl_au=1.1.717410842.1779629671; "
+    "SPC_F=1lvwarPPnmRUATX37bLZN7S04jNKGU6d; "
+    "REC_T_ID=4c0218ad-5775-11f1-86bb-9a9d85dbfc2d; "
+    "_ga=GA1.1.1355450000.1780118365; "
+    "SPC_CLIENTID=MWx2d2FyUFBubVJVdxqhvymedvofmtmy; "
+    "_hjSessionUser_868286=eyJpZCI6IjI5M2ExMzM1LTk1YzYtNTQ5Ni1hMjk1LTA2YmM0MWU2MjNhMyIsImNyZWF0ZWQiOjE3ODAxMTg0MTYzNTEsImV4aXN0aW5nIjp0cnVlfQ==; "
+    "_QPWSDCXHZQA=7ca5daa8-865e-45b6-e92d-9a51ea498948; "
+    "REC7iLP4Q=05794a98-388c-4798-8751-2c69ed47dfab; "
+    "_ga_FV78QC1144=GS2.1.s1786161415$o1$g0$t1786161415$j60$l0$h0; "
+    "csrftoken=wFN1qR32jwQUDQQlWy0bIXxmOR1kYaQN; "
+    "SPC_SI=tXYnagAAAABtNjFrZlEwQuwZwAcAAAAAMW9OWFZrNUc=; "
+    "_med=affiliates; language=vi; _med=refer; "
+    "_sapid=19e63dbafa6027d01cbbf1b8749fdde3b3127df78ec12cc2acb66686; "
+    "SPC_SC_SA_TK=; SPC_SC_SA_UD=; SPC_SC_OFFLINE_TOKEN=; "
+    "SPC_SC_MAIN_SHOP_SA_UD=; SC_SSO=-; SC_SSO_U=-; SPC_SC_SESSION=; "
+    "_ga_3XVGTY3603=GS2.1.s1786854354$o3$g1$t1786854529$j50$l0$h0; "
+    "SPC_CDS_CHAT=a6ace13a-713c-47f9-8e30-df2f4fc8e7a6; "
+    "_hjSession_868286=eyJpZCI6ImQzNGVjODg1LTkxNjAtNDhmYS04MjkyLTUwNWI0NjdlNzljNyIsImMiOjE3ODY4NTkwMTgxNzIsInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjowLCJzcCI6MH0=; "
+    "sense_sa_r=s; "
+    "SPC_ST=lABUba64yDOU3agFUgOSqqiz9+qrk3E9lo30UzOK3m/CcLTvO1OmHhrldRYUq60DMCuBkS1z8dq8h1kDlMW48qGfHZX+98hfbAfY7TdG8N2btVx5cEqn/0xfVxGwGXOF9OgufGombuyb9yKQzImJWDgs2e0p07syVZnMjOgbtCi/Zja2QGQ0yoxki3iwDpX7VmTp4n8zu4rXvgc+VZW/6g==.AC5+pH7ItmraolaMCbNhJAuk6NAyBLQOGhfBQS6s8MKB; "
+    "SPC_U=4500495946; "
+    "SPC_R_T_ID=Jnf8Uv3tjQ5Qw70lxveb4rTcdM2IA2hefaK24r7tfg07+dIsY+KjLNgucirfrVVPh9gKRirbEGjaK+fAHAF3M8pO0VnNaWc2dQ5kheB3/w6I4+MW8V39621qUtyoX2XpRuEBbBwlJFLMibWBb00Rw7eiiCSO0ep5sTXs3izLhN0=; "
+    "SPC_R_T_IV=V3l2c1Z3amlWR25PN3BtSQ==; "
+    "SPC_T_ID=Jnf8Uv3tjQ5Qw70lxveb4rTcdM2IA2hefaK24r7tfg07+dIsY+KjLNgucirfrVVPh9gKRirbEGjaK+fAHAF3M8pO0VnNaWc2dQ5kheB3/w6I4+MW8V39621qUtyoX2XpRuEBbBwlJFLMibWBb00Rw7eiiCSO0ep5sTXs3izLhN0=; "
+    "SPC_T_IV=V3l2c1Z3amlWR25PN3BtSQ==; "
+    "shopee_webUnique_ccd=%2BeeRXZdG0OYrt9c0UdSSTw%3D%3D%7CKXK1JqhvbmLx37MMkm4fYCRpL3LsKgUjRMLTwPCqnFdhUNeqEkCUSX4vrRGw0ODMZ%2BA14EY7vtFO1Og%3D%7Cp%2BhwESzTR27KrtCS%7C08%7C3; "
+    "ds=ac9fdfb4d29d18ecb09382762a97e7fe; "
+    "_ga_4GPP1ZXG63=GS2.1.s1786859023$o21$g1$t1786859668$j28$l0$h1225504181"
+)
 
 HEADERS = {
     "accept": "application/json, text/plain, */*",
     "accept-language": "vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5",
-    "af-ac-enc-dat": "c7cef5d54e8f45f7",
+    "af-ac-enc-dat": "8246436c1fe77ded",
     "af-ac-enc-sz-token": (
-        "cCmJ+xVn7Gtw2bbucDSSFA==|IXK1JqhvbmLx37MMkm4fYCRpL3LsKgUjRMLTwJ/PYVZhUNeqEkCUSX4vrRGw0ODMZ+A14EY7vtFOVA==|"
+        "78tS7J7lW9Jgb4AvZeioDQ==|KHK1JqhvbmLx37MMkm4fYCRpL3LsKgUjRMLTwMBXnFdhUNeqEkCUSX4vrRGw0ODMZ+A14EY7vtFO1Og=|"
         "p+hwESzTR27KrtCS|08|3"
     ),
     "affiliate-program-type": "1",
-    "csrf-token": "VWM979zE-caLJXMN91TM4p8L_1Gg8jHzhNhg",
+    "content-type": "application/json; charset=UTF-8",
+    "cookie": COOKIE_HEADER,
+    "csrf-token": "T7ko8360-pmpVASeeqaHwIjdi29mXZEoCAZw",
     "origin": "https://affiliate.shopee.vn",
     "priority": "u=1, i",
     "referer": "https://affiliate.shopee.vn/offer/custom_link",
@@ -101,8 +66,8 @@ HEADERS = {
     "sec-fetch-mode": "cors",
     "sec-fetch-site": "same-origin",
     "user-agent": USER_AGENT,
-    "x-sap-ri": "0a40816ae4633c08edbad83b0501f625a1741728b3f892a32428",
-    "x-sap-sec": "UoPg2c6bx46KfPuvg42vgPrv340WgkbvQy2CgHuvY42RgOuvx40LgSjvw4LugHrvM42sgr2vUyLkg4pvW404gSAv1yLSg5Rva4LngHwvK42SgPwvv4LxgOpvLdLFg5Avz40EgSwvXyLWgEwvG40jgPXvXT00grwvZT01grpvvy2dg4zvi400g42vp4Nvg42vg438tjqGg42vw2A0hvsOgT2vg42vSlkYfU9DgT2vX4RvgIpGQwbvgkB294Nvg42vPe5vgs0vg42sz+p1g42vM9MXn42vgs21g42Igy2valstuT2vgS1Wgd2va4Rvg42v/BedQbLBg42vm6X9NmjIgd2vg42ASmpUg4LtTdKV0b6Fj7u4g5fKgT2vg42jjRpVg4KDgd2vgOcab4QGYHm3YvgUg401zszvg4L6rjbUXwhd0xy9OeWSERkjC9I3BEVRx6EDzJVVe39vqQu2VcJiRXk0FRxpKmxh25H9VDTuawQrqrbA+Kbwuka3sPCOH7Dx2R5QChkEaJEr+mBg/hWjBPF5ws8Ud2Y2YvpJuM+Is2LcU3ynwScv2pcMESHZbWXRWF3v11k5XCBQgKtr3XpvzBVCTAQjjbmXM1rnvfSlZqbZpe4gwVACPeXupsLlOl4wB2I6OAWD46kodfml7ldUWamSEXrWgX57fQbdBee8o/VO4P3ED9xMOEuzXNCyZgKUU865FZ3DCKVlyAK4L/Z4khQ5a4FHg4wvg40EWsEJMYAzuTpvg4KWIPf8042vgOvSmPKigdCjCsQai7yeS4q0t+qXx9ctLyTQyRcOkyOvpFTXqhyyJe+j5rINyMxD2xnjWVb0fvvPBMQGO4tzILDyPvWvl24i2/UzpjrR82StK7rmC7cFjDKOQhuV5ibik69d/SA5nfIQv0d20s4DsOrqEoDG3ex6qzWBFqxXuMxhwk9MrjXp4TIh7by21NtCKWzWp1HQE25OGfxsYfsJcpv7hyAU/2C2Hf0tA2png42v4ypGa4uvg42MxxxK3c0XbINK0Cbvg42vg42vg42vg40Gg42v9+CgQqrSX++SUtF00lNInMYHEtBZwi7iWkMddL7HmBdhnKxd/c7Zwlp0hng6ZX6QXcDlexdqjPaJnKWJOmdxwgiLOKDfZ97R1jZrB3Rk8+AN8vl52T2vg42vg42vg42vmy2vgO1ESeQruy0NuQCJ3nq7fOXSUhpvC42vgJiS0KQoZXp7GBIR7e5rDczQtUIH/J0YCFV20KBexjpRbBhJ6d2vg42Qg42vacDNoe0ogfi4nxn43cHtbm1hHeChZyR6bmMH7s4ofJYkx/lI/OruaJoHHKm3tdNcqBEQoeHKAcVvg42vj42vgoNeVpNHgf6Ag42vg42vg42wg42vFTlNRTychuuo+ORPJ3S09dHLbqaBZ9Avj42vg4uqRugVgW6Afy2vgJN7tFN/xONv",
+    "x-sap-ri": "9450816adcb313b310c64c3805017d43da83e5ec5363b9abe91e",
+    "x-sap-sec": "6TrpaTb5iJa/akpQbJwQbkXQNJYdbOuQ9mw1bJRQxJYKbP6Q0mwObEpQlJwVbrpQiJY8beNQmJGNbEXQ6JwfbOwQXmGYbJuQ1JYabe5QWmGybIzQfJGBbE2QdJwybk2Q9JGIbruQRcG3bI5QGJYlbe2QUmGKbH2QzJYpbkrQUFY9bO2QjFY9bJwQJJjQbJwQbJZuEZthbJwQGweSgXsCbFwQbJwQEQn1iIi/bFwQUJzQbI8UvlbQbkYHvJjQbJwQrUVQbPYQbJwk+MudbJwQNkGtTJwQbpwdbJwxbmwQaU2hRFwQbS4KbcwQvJzQbJwQ7G7v0AZ1bJwQzbpnMc2xbcwQbJwUEducbJGXrcCFK6zVd7P+b5KWbFwQbJwGgzuRbJC/bcwQbOZl04dUkOmd69i3bJYT+pRQbJw7FjHo7kKGjYTa0PT78wKCl8b6DPbZq7Sf9VFi6dH4c2aSiM6JQwnYFPY42p69h8v03CpvpsOKcJ2A5fhsqnbg848qiUxqfoOskm2Uplx3S7ok3z/v/F/17KoSEHtGiHsjMFMxDc2SH5bFovzRu1v3Rmb/cOcUd1OrlR52MkSbTVqFpe0i0rofeGugRJKVhoqXgBkze8cOOwborFg5b2g+nsSL7Iy9d44eataH8L/LEOXyE3uTHHPPvD/MPtpPXqsfSHr09dewp3R0AMGitZJyIaXBtZHpC/fkIrdGqFisbPDPzZythbjr89EXbJ2QbJYdt9a3gboOImuQbJYJ2ieBQJwQbrN0ISXb58N//kH7kpwGBLwL/YM507IUdft7V68IkRJb2voUU2ucTsNP/xePpcPcSks3UEumXYO9I0d71E3McN1d+WvVUDCY28BbjpDVURui5WSTEzf5q449Okf6TtuUTfb5ZnsmSpXopjz+DyL+3EBm5wao0iBAb12Yae0q9lXR/GGB0ThVVZTtECJUsmqQ0+euojyfhXbRIj1hVHnOhJlyupeGdj8KvR48h4VBbJwQ4HogkFpQbJw2Libn9qF3ODGE9zbQbJwQbJwQbJwQbJYPbJwQWwuMnFxg/ZqIsATqFpvYRgB2lTNkIeFE9ukyqd8fob1redbTXq8rIQ8SgAiWk/Dq8xzQgjtcE14HedXmbotkIMKeCRAHk3Ftv01Xv+nZ7Z6LI9zzDcwQbJwQbJwQbJwQwmwQbOIKykRxQh8UtZuF8Ac8HV2Is5pQyJwQbJK09RRmk/fWwGRz9kCx2YH7EX5bXYFI5JJH9RNirEftZG0FXcwQbJwvbJwQxxzjykFmS6oEeiuy9qfROcI3zkwykhv8Z/kV95GmHqksL+zlXbxcPFW2zRy9dtnunG6lykfAKYRQbJwQZJwQboiZAIQfSHDLbJwQbJwQbJwibJwQzdJv7p7P0R2C00azN40UfRNhqBqLkFDoH/+CvP3l4g1Mm/VvETAQbJ2QbJwqc8j41hUjEc2QbJYzj4bUT4w8TJwQbJC=",
     "x-sz-sdk-version": "1.12.21",
 }
 
@@ -135,13 +100,13 @@ def build_payload(original_link: str) -> dict:
     return payload
 
 
+def build_request_body(original_link: str) -> str:
+    return json.dumps(build_payload(original_link), ensure_ascii=False, separators=(",", ":"))
+
+
 def create_session() -> requests.Session:
     session = requests.Session()
     session.headers.update(HEADERS)
-
-    for name, value, domain in COOKIES:
-        session.cookies.set(name, value, domain=domain, path="/")
-
     return session
 
 
@@ -159,7 +124,7 @@ def main() -> None:
         parser.error("missing original_link. Example: py -3.14 main.py https://s.shopee.vn/...")
 
     session = create_session()
-    response = session.post(URL, json=build_payload(args.original_link), timeout=30)
+    response = session.post(URL, data=build_request_body(args.original_link), timeout=30)
 
     print("Status:", response.status_code)
     try:
