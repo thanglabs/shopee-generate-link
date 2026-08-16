@@ -1,0 +1,30 @@
+name: Generate Shopee Affiliate Link
+
+on:
+  workflow_dispatch:
+    inputs:
+      original_link:
+        description: "Shopee original link"
+        required: true
+        type: string
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate link
+        env:
+          ORIGINAL_LINK: ${{ inputs.original_link }}
+        run: python main.py
